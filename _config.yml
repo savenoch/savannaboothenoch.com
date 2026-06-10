@@ -1,0 +1,26 @@
+# --- Site settings ---
+title: Savanna Boothe-Noch
+tagline: Personal site & resume
+description: >-
+  Personal website and resume of Savanna Boothe-Noch.
+author: Savanna Boothe-Noch
+
+# Set `url` to your live domain. If you use a custom domain (see CNAME),
+# keep `baseurl` empty. If instead you publish at
+# https://savenoch.github.io/savannaboothenoch.com/ then set:
+#   baseurl: "/savannaboothenoch.com"
+url: "https://savannaboothenoch.com"
+baseurl: ""
+
+# --- Build settings ---
+# Using a fully custom layout (no gem theme), so nothing to require here.
+markdown: kramdown
+permalink: pretty
+
+# Files Jekyll should not copy into the built site.
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .gitignore

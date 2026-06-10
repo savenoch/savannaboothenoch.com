@@ -1,0 +1,77 @@
+# =============================================================================
+#  YOUR RESUME CONTENT
+#  Edit this file to update the whole site. Nothing else needs to change.
+#  Keep the indentation (2 spaces) and the dashes (-) as they are.
+# =============================================================================
+
+basics:
+  name: Savanna Boothe-Noch
+  label: Your Job Title            # e.g. "Software Engineer"
+  location: City, State
+  email: sboothenoch@gmail.com
+  # Optional one- or two-sentence intro shown under your name.
+  summary: >-
+    A short professional summary about who you are, what you do, and what
+    you're looking for. Replace this with a couple of sentences in your voice.
+
+# Set to true once you've added a real assets/resume.pdf file.
+resume_pdf: true
+
+# Buttons / links shown in the header. Remove any you don't want.
+profiles:
+  - network: Email
+    url: mailto:sboothenoch@gmail.com
+  - network: GitHub
+    url: https://github.com/savenoch
+  - network: LinkedIn
+    url: https://www.linkedin.com/in/your-handle
+
+# -----------------------------------------------------------------------------
+experience:
+  - role: Job Title
+    company: Company Name
+    location: City, State
+    start: Mon YYYY
+    end: Present
+    highlights:
+      - Describe an accomplishment or responsibility, ideally with a result.
+      - Another bullet point. Lead with strong verbs and add numbers where you can.
+      - A third bullet point.
+
+  - role: Previous Job Title
+    company: Previous Company
+    location: City, State
+    start: Mon YYYY
+    end: Mon YYYY
+    highlights:
+      - What you did and the impact it had.
+      - Another highlight.
+
+# -----------------------------------------------------------------------------
+education:
+  - institution: School / University Name
+    credential: Degree or Program
+    location: City, State
+    start: YYYY
+    end: YYYY
+    notes: Optional note — honors, GPA, relevant coursework, etc.
+
+# -----------------------------------------------------------------------------
+# Group your skills however you like. Add or remove categories freely.
+skills:
+  - category: Languages
+    items: [Item one, Item two, Item three]
+  - category: Tools & Platforms
+    items: [Item one, Item two, Item three]
+  - category: Other
+    items: [Item one, Item two]
+
+# -----------------------------------------------------------------------------
+# Optional. Delete this whole section if you don't want a Projects area.
+projects:
+  - name: Project Name
+    url: https://example.com
+    description: One line about what the project is and what you did.
+  - name: Another Project
+    url: https://example.com
+    description: One line about it.

@@ -1,0 +1,93 @@
+---
+layout: default
+title: Savanna Boothe-Noch
+---
+{%- assign r = site.data.resume -%}
+
+<header class="resume-header">
+  <h1 class="name">{{ r.basics.name }}</h1>
+  {%- if r.basics.label %}<p class="label">{{ r.basics.label }}</p>{% endif -%}
+
+  <ul class="meta">
+    {%- if r.basics.location %}<li>{{ r.basics.location }}</li>{% endif -%}
+    {%- if r.basics.email %}<li><a href="mailto:{{ r.basics.email }}">{{ r.basics.email }}</a></li>{% endif -%}
+  </ul>
+
+  {%- if r.basics.summary %}<p class="summary">{{ r.basics.summary }}</p>{% endif -%}
+
+  <nav class="links">
+    {%- for p in r.profiles -%}
+      <a href="{{ p.url }}"{% unless p.url contains 'mailto:' %} target="_blank" rel="noopener"{% endunless %}>{{ p.network }}</a>
+    {%- endfor -%}
+    {%- if r.resume_pdf -%}
+      <a class="btn" href="{{ '/assets/resume.pdf' | relative_url }}" target="_blank" rel="noopener">Download PDF</a>
+    {%- endif -%}
+  </nav>
+</header>
+
+{%- if r.experience and r.experience.size > 0 %}
+<section class="resume-section">
+  <h2>Experience</h2>
+  {%- for job in r.experience %}
+  <article class="entry">
+    <div class="entry-head">
+      <h3>{{ job.role }}{% if job.company %} <span class="at">·</span> {{ job.company }}{% endif %}</h3>
+      <span class="dates">{{ job.start }}{% if job.end %} – {{ job.end }}{% endif %}</span>
+    </div>
+    {%- if job.location %}<p class="entry-sub">{{ job.location }}</p>{% endif -%}
+    {%- if job.highlights %}
+    <ul class="highlights">
+      {%- for h in job.highlights %}<li>{{ h }}</li>{% endfor -%}
+    </ul>
+    {%- endif -%}
+  </article>
+  {%- endfor %}
+</section>
+{%- endif -%}
+
+{%- if r.education and r.education.size > 0 %}
+<section class="resume-section">
+  <h2>Education</h2>
+  {%- for ed in r.education %}
+  <article class="entry">
+    <div class="entry-head">
+      <h3>{{ ed.institution }}</h3>
+      <span class="dates">{{ ed.start }}{% if ed.end %} – {{ ed.end }}{% endif %}</span>
+    </div>
+    <p class="entry-sub">{{ ed.credential }}{% if ed.location %} <span class="at">·</span> {{ ed.location }}{% endif %}</p>
+    {%- if ed.notes %}<p class="entry-note">{{ ed.notes }}</p>{% endif -%}
+  </article>
+  {%- endfor %}
+</section>
+{%- endif -%}
+
+{%- if r.skills and r.skills.size > 0 %}
+<section class="resume-section">
+  <h2>Skills</h2>
+  <dl class="skills">
+    {%- for group in r.skills %}
+    <div class="skill-group">
+      <dt>{{ group.category }}</dt>
+      <dd>{{ group.items | join: " · " }}</dd>
+    </div>
+    {%- endfor %}
+  </dl>
+</section>
+{%- endif -%}
+
+{%- if r.projects and r.projects.size > 0 %}
+<section class="resume-section">
+  <h2>Projects</h2>
+  {%- for proj in r.projects %}
+  <article class="entry">
+    <div class="entry-head">
+      <h3>
+        {%- if proj.url %}<a href="{{ proj.url }}" target="_blank" rel="noopener">{{ proj.name }}</a>
+        {%- else %}{{ proj.name }}{% endif -%}
+      </h3>
+    </div>
+    {%- if proj.description %}<p class="entry-sub">{{ proj.description }}</p>{% endif -%}
+  </article>
+  {%- endfor %}
+</section>
+{%- endif -%}
