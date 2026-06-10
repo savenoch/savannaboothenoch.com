@@ -5,73 +5,98 @@
 # =============================================================================
 
 basics:
-  name: Savanna Boothe-Noch
-  label: Your Job Title            # e.g. "Software Engineer"
-  location: City, State
+  name: Savanna Booth Enoch
+  label: Product & Program Manager
+  location: Oakland, CA
   email: sboothenoch@gmail.com
-  # Optional one- or two-sentence intro shown under your name.
+  phone: 202-594-1225          # remove this line if you'd rather not list it publicly
   summary: >-
-    A short professional summary about who you are, what you do, and what
-    you're looking for. Replace this with a couple of sentences in your voice.
+    Product and program manager with 10+ years leading trust & safety, civic
+    technology, and platform integrity work — from modernizing federal voter
+    access services to shipping ML-powered safety systems for 1B+ Instagram
+    users.
 
-# Set to true once you've added a real assets/resume.pdf file.
+# Set to false to hide the "Download PDF" button.
 resume_pdf: true
 
 # Buttons / links shown in the header. Remove any you don't want.
 profiles:
   - network: Email
     url: mailto:sboothenoch@gmail.com
+  - network: LinkedIn
+    url: https://www.linkedin.com/in/savannabooth/
   - network: GitHub
     url: https://github.com/savenoch
-  - network: LinkedIn
-    url: https://www.linkedin.com/in/your-handle
 
 # -----------------------------------------------------------------------------
 experience:
-  - role: Job Title
-    company: Company Name
-    location: City, State
-    start: Mon YYYY
-    end: Present
+  - role: Consulting Product Manager
+    company: 18F · General Services Administration
+    location: Remote
+    start: Sep 2024
+    end: Mar 2025
     highlights:
-      - Describe an accomplishment or responsibility, ideally with a result.
-      - Another bullet point. Lead with strong verbs and add numbers where you can.
-      - A third bullet point.
+      - Partnered with the DoD Federal Voting Assistance Program to modernize voter access services for military and overseas citizens, navigating federal procurement, complex election regulations, and multi-agency alignment.
+      - Led user research, policy reviews, and stakeholder interviews to create a user-centered delivery roadmap that improved program efficiency and accessibility for underserved voter populations.
+      - Defined modernization goals for the DoD's fax-based absentee voting service, translating regulatory and technical constraints into actionable milestones.
+      - Streamlined 18F's onboarding program by evaluating tools and processes, reducing onboarding time and improving new-hire readiness.
 
-  - role: Previous Job Title
-    company: Previous Company
-    location: City, State
-    start: Mon YYYY
-    end: Mon YYYY
+  - role: Product Integrity Program Manager, Community Product
+    company: Meta Platforms
+    location: Remote
+    start: Mar 2021
+    end: May 2023
     highlights:
-      - What you did and the impact it had.
-      - Another highlight.
+      - Directed global trust & safety initiatives for 1B+ Instagram users, shipping ML-powered detection systems that proactively identified harassment, self-injury, and child exploitation content, with continuous feedback loops to improve model performance and protect vulnerable populations.
+      - Built and scaled a centralized product review platform and roadmap, improving launch velocity and cross-functional transparency while embedding proactive compliance and risk mitigation into the product lifecycle.
+      - Partnered with engineering, data science, policy, and legal teams to translate complex safety requirements into technical specs and tooling, streamlining how automated detection and human review worked together at scale.
+      - Led cross-team delivery of automated detection tooling and proactive user controls, measurably reducing harmful content exposure and improving safety outcomes across the platform.
+
+  - role: Product Program Manager, Digital Rights Integrity
+    company: Meta Platforms
+    location: Menlo Park, CA
+    start: Aug 2018
+    end: Mar 2021
+    highlights:
+      - Developed Instagram's first cross-functional product review program to proactively address digital rights abuse, enabling consistent evaluation of costly operational, legal and compliance risks pre-launch.
+      - Conducted deep investigations into rights violations, strengthening product safety measures and informing policy and operational responses across Instagram.
+      - Mentored a team of 7 to scale ownership of integrity reviews, embedding measurable legal and policy safeguards across product lifecycles.
+
+  - role: Technical Program Manager
+    company: Groupon
+    location: Palo Alto, CA
+    start: Oct 2016
+    end: Aug 2018
+    highlights:
+      - Scaled Agile delivery practices across 11 engineering and product teams, using iterative training programs and workflow redesign to increase release velocity while maintaining transparency and user value delivery.
+      - Introduced metrics and dashboards to improve visibility into team performance and unblock critical launches, enabling stronger interdisciplinary collaboration.
+      - Led GDPR compliance initiatives across multiple product lines, embedding Privacy by Design principles to meet regulatory standards and reinforce user trust.
+      - Directed delivery of complex engineering projects, including NLP and machine learning models, infrastructure refactoring, and a data science platform launch.
+
+  - role: Operations & Systems Program Manager
+    company: Delivering Happiness
+    location: Remote
+    start: Jun 2014
+    end: Jul 2016
+    highlights:
+      - Provided consulting expertise to analyze company-wide operations, designing Salesforce automation solutions that streamlined workflows and improved executive decision-making.
+      - Developed sales pipeline strategies and implemented a lead management system that reduced the sales cycle by ~57% (64 to 27 days).
+      - Launched the company's first automated B2B email marketing system, enabling targeted outreach and data-driven user insights to increase conversion rates.
+
+  - role: Program Development Coordinator
+    company: ProInspire
+    location: Arlington, VA
+    start: Jun 2013
+    end: Jun 2014
+    highlights:
+      - Co-developed and launched a pilot leadership training program for nonprofit managers in Washington, D.C. and San Francisco.
+      - Oversaw operations of the flagship Fellowship program, supporting cross-sector career transitions and strengthening nonprofit talent pipelines.
 
 # -----------------------------------------------------------------------------
 education:
-  - institution: School / University Name
-    credential: Degree or Program
-    location: City, State
-    start: YYYY
-    end: YYYY
-    notes: Optional note — honors, GPA, relevant coursework, etc.
-
-# -----------------------------------------------------------------------------
-# Group your skills however you like. Add or remove categories freely.
-skills:
-  - category: Languages
-    items: [Item one, Item two, Item three]
-  - category: Tools & Platforms
-    items: [Item one, Item two, Item three]
-  - category: Other
-    items: [Item one, Item two]
-
-# -----------------------------------------------------------------------------
-# Optional. Delete this whole section if you don't want a Projects area.
-projects:
-  - name: Project Name
-    url: https://example.com
-    description: One line about what the project is and what you did.
-  - name: Another Project
-    url: https://example.com
-    description: One line about it.
+  - institution: George Mason University
+    credential: Bachelor of Arts, Psychology
+    end: 2014
+  - institution: Nelson Mandela Metropolitan University
+    credential: Integrated Studies & Community Psychology
+    end: 2013

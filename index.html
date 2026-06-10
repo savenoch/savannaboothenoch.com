@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Savanna Boothe-Noch
+title: Savanna Booth Enoch
 ---
 {%- assign r = site.data.resume -%}
 
@@ -10,6 +10,7 @@ title: Savanna Boothe-Noch
 
   <ul class="meta">
     {%- if r.basics.location %}<li>{{ r.basics.location }}</li>{% endif -%}
+    {%- if r.basics.phone %}<li><a href="tel:{{ r.basics.phone | remove: ' ' | remove: '-' }}">{{ r.basics.phone }}</a></li>{% endif -%}
     {%- if r.basics.email %}<li><a href="mailto:{{ r.basics.email }}">{{ r.basics.email }}</a></li>{% endif -%}
   </ul>
 
@@ -52,7 +53,7 @@ title: Savanna Boothe-Noch
   <article class="entry">
     <div class="entry-head">
       <h3>{{ ed.institution }}</h3>
-      <span class="dates">{{ ed.start }}{% if ed.end %} – {{ ed.end }}{% endif %}</span>
+      <span class="dates">{% if ed.start %}{{ ed.start }} – {% endif %}{{ ed.end }}</span>
     </div>
     <p class="entry-sub">{{ ed.credential }}{% if ed.location %} <span class="at">·</span> {{ ed.location }}{% endif %}</p>
     {%- if ed.notes %}<p class="entry-note">{{ ed.notes }}</p>{% endif -%}
