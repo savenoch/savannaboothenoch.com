@@ -18,7 +18,6 @@ Other things you might touch:
 | Page colors / fonts | `assets/css/style.css` (change `--accent` near the top to re-theme) |
 | Downloadable resume | add `assets/resume.pdf` (see `assets/README.md`) |
 | Site title / SEO description | `_config.yml` |
-| Custom domain | `CNAME` |
 | Page structure | `index.html`, `_layouts/default.html` |
 
 ## Publishing
@@ -29,21 +28,25 @@ This repo is already set up for GitHub Pages. To turn it on:
 2. On GitHub: **Settings → Pages → Build and deployment**.
    - **Source:** *Deploy from a branch*
    - **Branch:** `main` / `/ (root)`
-3. GitHub builds the site and publishes it within a minute or two.
+3. GitHub builds the site and publishes it within a minute or two at
+   **https://savenoch.github.io/savannaboothenoch.com/**
 
-### Custom domain
+Because this is a *project* site served from a `/savannaboothenoch.com/`
+subpath, `_config.yml` sets `baseurl: "/savannaboothenoch.com"`. That's what
+keeps the CSS and links working — they're generated through Jekyll's
+`relative_url` filter, so don't hard-code paths like `/assets/...` in
+templates; use `{{ '/assets/...' | relative_url }}` instead.
 
-The `CNAME` file points the site at **savannaboothenoch.com**. For that to
-work you also need DNS records at your domain registrar:
+### Using a custom domain later
 
-- Four `A` records for the apex domain pointing to GitHub's IPs:
-  `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-- (Optional) a `CNAME` record for `www` pointing to `savenoch.github.io`.
+If you point **savannaboothenoch.com** at this repo:
 
-Until DNS is configured, you can preview at
-`https://savenoch.github.io/savannaboothenoch.com/`. If you use that URL
-instead of a custom domain, delete the `CNAME` file and set
-`baseurl: "/savannaboothenoch.com"` in `_config.yml`.
+1. Add a file named `CNAME` (no extension) containing `savannaboothenoch.com`.
+2. In `_config.yml` set `baseurl: ""` and `url: "https://savannaboothenoch.com"`.
+3. Add DNS records at your registrar — four `A` records for the apex domain
+   pointing to GitHub's IPs (`185.199.108.153`, `185.199.109.153`,
+   `185.199.110.153`, `185.199.111.153`), and optionally a `CNAME` record for
+   `www` → `savenoch.github.io`.
 
 ## Running locally (optional)
 
