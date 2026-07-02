@@ -1,7 +1,7 @@
 # savannaboothenoch.com
 
 Personal website and resume, built with [Jekyll](https://jekyllrb.com/) and
-hosted on [GitHub Pages](https://pages.github.com/).
+hosted on [GitHub Pages](https://pages.github.com/)..
 
 ## Editing your content
 
