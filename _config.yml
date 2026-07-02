@@ -6,15 +6,14 @@ description: >-
   manager specializing in trust & safety, civic technology, and platform integrity.
 author: Savanna Booth Enoch
 
-# Published as a GitHub Pages *project* site at:
-#   https://savenoch.github.io/savannaboothenoch.com/
-# so the whole site lives under the /savannaboothenoch.com/ subpath and
-# `baseurl` must reflect that (the `relative_url` filter prepends it to all
-# asset/links). If you later set up the custom domain savannaboothenoch.com,
-# set `baseurl: ""`, `url: "https://savannaboothenoch.com"`, and add a CNAME
-# file containing that domain.
-url: "https://savenoch.github.io"
-baseurl: "/savannaboothenoch.com"
+# Served from the custom domain savannaboothenoch.com (see the CNAME file),
+# so the site lives at the domain root. `baseurl` is empty and the
+# `relative_url` filter prepends nothing, keeping asset/links at the root.
+# (If you ever revert to the GitHub Pages project site at
+# https://savenoch.github.io/savannaboothenoch.com/, set
+# `baseurl: "/savannaboothenoch.com"` and `url: "https://savenoch.github.io"`.)
+url: "https://savannaboothenoch.com"
+baseurl: ""
 
 # --- Build settings ---
 # Using a fully custom layout (no gem theme), so nothing to require here.
