@@ -27,22 +27,29 @@ title: Savanna Booth Enoch
 </header>
 
 {%- if r.experience and r.experience.size > 0 %}
-<section class="resume-section">
+<section class="resume-section experience-section">
   <h2>Experience</h2>
+  <div class="resume-list">
   {%- for job in r.experience %}
   <article class="entry">
-    <div class="entry-head">
-      <h3>{{ job.role }}{% if job.company %} <span class="at">·</span> {{ job.company }}{% endif %}</h3>
-      <span class="dates">{{ job.start }}{% if job.end %} – {{ job.end }}{% endif %}</span>
+    <div class="entry-date">
+      <span class="dates">{{ job.start }}{% if job.end %} → {{ job.end }}{% endif %}</span>
     </div>
-    {%- if job.location or job.client %}<p class="entry-sub">{{ job.location }}{% if job.location and job.client %} <span class="at">·</span> {% endif %}{% if job.client %}Client: {{ job.client }}{% endif %}</p>{% endif -%}
-    {%- if job.highlights %}
-    <ul class="highlights">
-      {%- for h in job.highlights %}<li>{{ h }}</li>{% endfor -%}
-    </ul>
-    {%- endif -%}
+    <div class="entry-body">
+      <div class="entry-head">
+        <h3>{{ job.role }}</h3>
+        {%- if job.company %}<p class="entry-company">{{ job.company }}{% if job.location %} — {{ job.location }}{% endif %}</p>{% endif -%}
+      </div>
+      {%- if job.client %}<p class="entry-sub">Client: {{ job.client }}</p>{% endif -%}
+      {%- if job.highlights %}
+      <ul class="highlights">
+        {%- for h in job.highlights %}<li>{{ h }}</li>{% endfor -%}
+      </ul>
+      {%- endif -%}
+    </div>
   </article>
   {%- endfor %}
+  </div>
 </section>
 {%- endif -%}
 
