@@ -6,15 +6,15 @@
 
 basics:
   name: Savanna Booth Enoch
-  label: Product & Program Manager
+  label: Senior Product Manager
   location: Oakland, CA
   email: sboothenoch@gmail.com
   phone: 202-594-1225          # remove this line if you'd rather not list it publicly
   summary: >-
-    Product and program manager with 10+ years leading trust & safety, civic
-    technology, and platform integrity work from modernizing federal voter
-    access services to shipping ML-powered safety systems for 1B+ Instagram
-    users.
+    Product manager with 8+ years driving human-centered, outcomes-driven
+    products across government and technology. I turn ambiguous problems into
+    MVPs, align cross-functional teams of designers, data scientists, and
+    engineers, and use AI to accelerate discovery and delivery.
 
 # Set to false to hide the "Download PDF" button.
 resume_pdf: true
@@ -29,7 +29,49 @@ profiles:
     url: https://github.com/savenoch
 
 # -----------------------------------------------------------------------------
+skills:
+  - category: Product
+    items:
+      - Product Strategy
+      - MVP Definition
+      - Roadmapping & Prioritization
+      - Continuous Discovery & Delivery
+      - Outcomes-Driven Metrics
+  - category: Design & Research
+    items:
+      - Human-Centered Design
+      - User Research
+      - Requirements & User Stories
+      - Accessibility
+  - category: Delivery
+    items:
+      - Agile/Scrum
+      - Change Management
+      - AI Accelerated Workflows
+  - category: Leadership
+    items:
+      - Cross-Functional Team Leadership
+      - Client & Stakeholder Management
+  - category: Domain
+    items:
+      - Government & Civic Technology
+
+# -----------------------------------------------------------------------------
 experience:
+  - role: Consulting Product Manager (Contractor)
+    company: LakeRaven, LLC
+    location: Remote
+    client: New Mexico Bureau of Geology & Mineral Resources, statewide Water Data Initiative
+    start: Dec 2025
+    end: Present
+    highlights:
+      - Served as the initiative's first product manager, owning product strategy, V1 scope definition, and successful launch of a public data platform serving state agencies, researchers, and field teams, rebuilding the product on a compressed timeline following a 2024 cyber incident. Led ongoing V1.1 delivery.
+      - Maintained team cohesion and delivery through significant personnel transitions, interpersonal conflict, and extended leaves on a small government team, while introducing agile delivery practices, a triage workflow, and a working agreement that the team sustained through a PM transition.
+      - Facilitated a 2-day in-person roadmap workshop with a cross-functional government team, producing 10 strategic pillars, a prioritization framework, team values, and a feature-to-delivery process map that established shared product direction.
+      - Synthesized cross-bureau stakeholder research into a V1 product definition and long-term roadmap, rebuilding leadership trust eroded by years of missed timelines. Helped position the team as the Bureau's centralized data services team, securing additional project funding, including a statewide geothermal initiative, and cross-bureau partnerships.
+      - Planned and conducted 5 structured user research sessions with field staff, researchers, and data managers, synthesizing findings into design recommendations, requirements, and roadmap items that directly shaped V1.1 scope and a multi-horizon capability roadmap.
+      - Established a shared AI context repository for the development team, capturing institutional knowledge, product strategy, and domain expertise into structured files that AI coding tools reference automatically. Extended this approach to documentation, diagnostics, and reporting, standardizing async-first knowledge systems for continuity through staffing transitions.
+
   - role: Consulting Product Manager
     company: 18F · General Services Administration
     location: Remote
@@ -41,7 +83,7 @@ experience:
       - Defined modernization goals for the DoD's fax-based absentee voting service, translating regulatory and technical constraints into actionable milestones.
       - Streamlined 18F's onboarding program by evaluating tools and processes, reducing onboarding time and improving new-hire readiness.
 
-  - role: Product Integrity Program Manager, Community Product
+  - role: Product Integrity Program Manager, Community Product Integrity
     company: Meta Platforms
     location: Remote
     start: Mar 2021
@@ -97,6 +139,3 @@ education:
   - institution: George Mason University
     credential: Bachelor of Arts, Psychology
     end: 2014
-  - institution: Nelson Mandela Metropolitan University
-    credential: Integrated Studies & Community Psychology
-    end: 2013

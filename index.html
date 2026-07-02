@@ -35,7 +35,7 @@ title: Savanna Booth Enoch
       <h3>{{ job.role }}{% if job.company %} <span class="at">·</span> {{ job.company }}{% endif %}</h3>
       <span class="dates">{{ job.start }}{% if job.end %} – {{ job.end }}{% endif %}</span>
     </div>
-    {%- if job.location %}<p class="entry-sub">{{ job.location }}</p>{% endif -%}
+    {%- if job.location or job.client %}<p class="entry-sub">{{ job.location }}{% if job.location and job.client %} <span class="at">·</span> {% endif %}{% if job.client %}Client: {{ job.client }}{% endif %}</p>{% endif -%}
     {%- if job.highlights %}
     <ul class="highlights">
       {%- for h in job.highlights %}<li>{{ h }}</li>{% endfor -%}
