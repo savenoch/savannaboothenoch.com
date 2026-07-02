@@ -37,8 +37,9 @@ title: Savanna Booth Enoch
     </div>
     <div class="entry-body">
       <div class="entry-head">
-        <h3>{{ job.role }}</h3>
-        {%- if job.company %}<p class="entry-company">{{ job.company }}{% if job.location %} — {{ job.location }}{% endif %}</p>{% endif -%}
+        {%- if job.company %}<h3 class="entry-company">{{ job.company }}</h3>{% endif -%}
+        <h4 class="entry-role">{{ job.role }}</h4>
+        {%- if job.location %}<p class="entry-location">{{ job.location }}</p>{% endif -%}
       </div>
       {%- if job.client %}<p class="entry-sub">Client: {{ job.client }}</p>{% endif -%}
       {%- if job.highlights %}
