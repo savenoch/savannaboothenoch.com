@@ -3,7 +3,7 @@
 Personal website and resume, built with [Jekyll](https://jekyllrb.com/) and
 hosted on [GitHub Pages](https://pages.github.com/)..
 
-## Editing your content
+## Editing 
 
 Almost everything you'll want to change lives in one file:
 
