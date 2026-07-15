@@ -1,0 +1,5 @@
+<nav class="{{ include.class | default: 'site-nav' }}" aria-label="Primary">
+  <a href="{{ '/about/' | relative_url }}"{% if page.nav == 'about' %} aria-current="page"{% endif %}>About</a>
+  <a href="{{ '/work/' | relative_url }}"{% if page.nav == 'work' %} aria-current="page"{% endif %}>Work</a>
+  <a href="{{ '/contact/' | relative_url }}"{% if page.nav == 'contact' %} aria-current="page"{% endif %}>Contact</a>
+</nav>

@@ -1,12 +1,14 @@
 ---
 layout: default
 title: Savanna Booth Enoch
+hide_header: true
 ---
 {%- assign r = site.data.resume -%}
 
 <section class="home-intro">
-  <div>
+  <div class="home-intro-text">
     <h1 class="name">{{ r.basics.name }}</h1>
+    {% include nav.html class="home-nav" %}
   </div>
   <div class="portrait">
     <img src="{{ '/assets/img/savanna.png' | relative_url }}"

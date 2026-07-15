@@ -19,16 +19,14 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
+  {%- unless page.hide_header %}
   <header class="site-header">
     <div class="site-header-inner">
       <a class="site-brand" href="{{ '/' | relative_url }}">{{ site.author }}</a>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="{{ '/about/' | relative_url }}"{% if page.nav == 'about' %} aria-current="page"{% endif %}>About</a>
-        <a href="{{ '/work/' | relative_url }}"{% if page.nav == 'work' %} aria-current="page"{% endif %}>Work</a>
-        <a href="{{ '/contact/' | relative_url }}"{% if page.nav == 'contact' %} aria-current="page"{% endif %}>Contact</a>
-      </nav>
+      {% include nav.html class="site-nav" %}
     </div>
   </header>
+  {%- endunless %}
 
   <main class="page">
     {{ content }}
