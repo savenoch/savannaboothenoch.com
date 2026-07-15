@@ -1,0 +1,38 @@
+---
+layout: default
+title: Contact — Savanna Booth Enoch
+permalink: /contact/
+nav: contact
+---
+{%- assign r = site.data.resume -%}
+{%- assign li = "" -%}{%- assign gh = "" -%}
+{%- for p in r.profiles -%}
+  {%- if p.network == "LinkedIn" %}{% assign li = p.url %}{% endif -%}
+  {%- if p.network == "GitHub" %}{% assign gh = p.url %}{% endif -%}
+{%- endfor -%}
+
+<div class="contact-lead">
+  <div class="portrait">
+    <img src="{{ '/assets/img/savanna.png' | relative_url }}"
+         alt="Portrait of {{ r.basics.name }}">
+  </div>
+  <h1 class="page-title" style="margin:0"><span class="thin">Contact</span></h1>
+</div>
+
+<ul class="contact-list">
+  {%- if r.basics.email %}
+  <li><span class="k">Email</span><a href="mailto:{{ r.basics.email }}">{{ r.basics.email }}</a></li>
+  {%- endif -%}
+  {%- if r.basics.phone %}
+  <li><span class="k">Phone</span><a href="tel:{{ r.basics.phone | remove: ' ' | remove: '-' }}">{{ r.basics.phone }}</a></li>
+  {%- endif -%}
+  {%- if r.basics.location %}
+  <li><span class="k">Location</span><span>{{ r.basics.location }}</span></li>
+  {%- endif -%}
+  {%- if li != "" %}
+  <li><span class="k">LinkedIn</span><a href="{{ li }}" target="_blank" rel="noopener">{{ li | remove: 'https://www.' | remove: 'https://' | replace: '/in/', '/in/' | strip }}</a></li>
+  {%- endif -%}
+  {%- if gh != "" %}
+  <li><span class="k">GitHub</span><a href="{{ gh }}" target="_blank" rel="noopener">{{ gh | remove: 'https://www.' | remove: 'https://' }}</a></li>
+  {%- endif -%}
+</ul>

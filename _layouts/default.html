@@ -13,14 +13,23 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
 
-  <!-- Public Sans (Google Fonts) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+  <!-- Self-hosted Switzer (Fontshare, variable 100–900). No runtime CDN request. -->
+  <link rel="preload" href="{{ '/assets/fonts/Switzer-Variable.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="{{ '/' | relative_url }}">{{ site.author }}</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="{{ '/about/' | relative_url }}"{% if page.nav == 'about' %} aria-current="page"{% endif %}>About</a>
+        <a href="{{ '/work/' | relative_url }}"{% if page.nav == 'work' %} aria-current="page"{% endif %}>Work</a>
+        <a href="{{ '/contact/' | relative_url }}"{% if page.nav == 'contact' %} aria-current="page"{% endif %}>Contact</a>
+      </nav>
+    </div>
+  </header>
+
   <main class="page">
     {{ content }}
   </main>

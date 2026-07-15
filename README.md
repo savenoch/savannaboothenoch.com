@@ -5,20 +5,32 @@ hosted on [GitHub Pages](https://pages.github.com/)..
 
 ## Editing 
 
-Almost everything you'll want to change lives in one file:
+The site has four pages, all sharing one layout (`_layouts/default.html`) and
+nav (About · Work · Contact):
 
-- **`_data/resume.yml`** — your name, title, experience, education, skills, and
-  projects. Edit this and the whole page updates. The file has comments
-  explaining each section.
+- **`index.html`** — homepage: photo + intro blurb.
+- **`about.html`** — placeholder, ready for real content.
+- **`work.html`** — intro + résumé (Experience / Education / Skills), driven by
+  `_data/resume.yml`, plus the Download-résumé (PDF) link.
+- **`contact.html`** — contact details, pulled from `_data/resume.yml`.
+
+Most résumé content lives in one file:
+
+- **`_data/resume.yml`** — name, title, experience, education, skills, profiles.
+  Edit this and the Work + Contact pages update. The file has comments
+  explaining each section. (The homepage blurb and the Work/About intro
+  paragraphs are prose written directly in their `.html` files.)
 
 Other things you might touch:
 
 | What | Where |
 |------|-------|
-| Page colors / fonts | `assets/css/style.css` (change `--accent` near the top to re-theme) |
-| Downloadable resume | add `assets/resume.pdf` (see `assets/README.md`) |
+| Colors (warm palette + dark mode) | `assets/css/style.css` (edit the `:root` variables; `--accent` is the clay accent) |
+| Typeface | Switzer, self-hosted in `assets/fonts/` (variable 100–900); `@font-face` is at the top of `style.css` |
+| Photo | `assets/img/savanna.png` (cropped to a circle in CSS) |
+| Downloadable resume | `assets/resume.pdf` (see `assets/README.md`) |
 | Site title / SEO description | `_config.yml` |
-| Page structure | `index.html`, `_layouts/default.html` |
+| Layout / nav | `_layouts/default.html` |
 
 ## Publishing
 

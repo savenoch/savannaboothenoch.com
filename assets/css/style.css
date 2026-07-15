@@ -1,15 +1,49 @@
 /* =========================================================================
    Savanna Booth Enoch — personal site
-   Clean, minimal, typography-first. Single accent color set below.
+   Typography-first, warm & neutral. Switzer (self-hosted, variable 100–900).
    ========================================================================= */
 
+/* --- Font: self-hosted Switzer, variable weight axis 100–900 -------------- */
+@font-face {
+  font-family: "Switzer";
+  src: url("../fonts/Switzer-Variable.woff2") format("woff2-variations"),
+       url("../fonts/Switzer-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Switzer";
+  src: url("../fonts/Switzer-VariableItalic.woff2") format("woff2-variations"),
+       url("../fonts/Switzer-VariableItalic.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* --- Palette: warm neutral, one clay accent ------------------------------ */
 :root {
-  --ink: #1a1a1a;
-  --muted: #6b6b6b;
-  --line: #e6e6e6;
-  --accent: #2c5f4f;     /* change this one value to re-theme the site */
-  --bg: #ffffff;
-  --max-width: 720px;
+  --bg: #faf7f1;        /* warm off-white / cream                            */
+  --surface: #f3eee4;   /* slightly deeper warm surface for cards/borders    */
+  --ink: #26221c;       /* warm near-black                                   */
+  --muted: #6f6a5f;     /* warm gray for supporting text                     */
+  --line: #e7ded0;      /* hairlines                                         */
+  --accent: #b4562d;    /* clay / terracotta — the warm accent moment        */
+  --accent-soft: #a24e29;
+  --max-width: 680px;
+  --font: "Switzer", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1915;
+    --surface: #24211c;
+    --ink: #ece6da;
+    --muted: #a29a8b;
+    --line: #342f27;
+    --accent: #e08a5f;   /* lighter clay reads better on dark                */
+    --accent-soft: #eaa07c;
+  }
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -20,95 +54,188 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--bg);
-  font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 17px;
-  line-height: 1.6;
+  font-family: var(--font);
+  font-size: 18px;
+  line-height: 1.65;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 a {
   color: var(--accent);
   text-decoration: none;
 }
-a:hover { text-decoration: underline; }
+a:hover { text-decoration: underline; text-underline-offset: 2px; }
 
+/* --- Header / nav -------------------------------------------------------- */
+.site-header {
+  border-bottom: 1px solid var(--line);
+}
+.site-header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.4rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .5rem 1.5rem;
+}
+.site-brand {
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 1.02rem;
+  letter-spacing: -0.01em;
+}
+.site-brand:hover { text-decoration: none; color: var(--accent); }
+
+.site-nav {
+  display: flex;
+  gap: 1.4rem;
+}
+.site-nav a {
+  color: var(--muted);
+  font-weight: 500;
+  font-size: .95rem;
+  letter-spacing: .01em;
+  padding: .1rem 0;
+}
+.site-nav a:hover { color: var(--ink); text-decoration: none; }
+.site-nav a[aria-current="page"] {
+  color: var(--ink);
+  box-shadow: inset 0 -2px 0 var(--accent);
+}
+
+/* --- Page shell ---------------------------------------------------------- */
 .page {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 4rem 1.5rem 1rem;
+  padding: 4.5rem 1.5rem 2rem;
 }
 
-/* --- Header --------------------------------------------------------------- */
-.resume-header { margin-bottom: 2.5rem; }
-
-.name {
-  font-size: 2.4rem;
-  line-height: 1.1;
-  margin: 0 0 .25rem;
+.page-title {
+  font-size: 2.2rem;
+  font-weight: 600;
   letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 0 0 1.5rem;
+}
+.page-title .thin { font-weight: 200; }
+
+/* --- Circular portrait --------------------------------------------------- */
+.portrait {
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: 0 1px 0 var(--line);
+}
+.portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 40%;   /* face-centered square crop                   */
+  display: block;
 }
 
-.label {
-  font-size: 1.15rem;
-  color: var(--accent);
-  margin: 0 0 .75rem;
-  font-weight: 500;
-}
-
-.meta {
-  list-style: none;
+/* --- Homepage ------------------------------------------------------------ */
+.home-intro {
   display: flex;
-  flex-wrap: wrap;
-  gap: .35rem 1rem;
-  padding: 0;
-  margin: 0 0 1rem;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2.75rem;
+}
+.home-intro .name {
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  margin: 0 0 .2rem;
+}
+.home-intro .label {
+  margin: 0;
   color: var(--muted);
-  font-size: .95rem;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: .01em;
 }
 
-.summary {
-  margin: 0 0 1.25rem;
+/* The blurb: hierarchy via weight + size, not one flat block. */
+.lede {
+  font-size: clamp(1.5rem, 4.2vw, 2rem);
+  font-weight: 200;
+  line-height: 1.28;
+  letter-spacing: -0.015em;
+  margin: 0 0 1.75rem;
+}
+.lede .hl {
+  font-weight: 600;
+  font-style: normal;
+  color: var(--accent);
+}
+.lede em { font-style: normal; font-weight: 500; color: var(--ink); }
+
+.blurb {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 0 0 1.2rem;
   max-width: 60ch;
 }
+.blurb strong { color: var(--ink); font-weight: 600; }
+.blurb:last-of-type { margin-bottom: 0; }
 
-.links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .6rem;
+/* --- Generic prose intro (Work / About) ---------------------------------- */
+.intro {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.55;
+  letter-spacing: -0.005em;
+  margin: 0 0 2.5rem;
+}
+.intro strong { font-weight: 600; }
+
+.coming-soon {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+/* --- Résumé download button ---------------------------------------------- */
+.resume-download {
+  display: inline-flex;
   align-items: center;
-}
-.links a {
-  font-size: .95rem;
-  padding: .2rem 0;
-}
-.links .btn {
+  gap: .5rem;
   border: 1px solid var(--accent);
-  border-radius: 6px;
-  padding: .35rem .85rem;
+  color: var(--accent);
+  border-radius: 8px;
+  padding: .5rem 1rem;
   font-weight: 500;
+  font-size: .95rem;
+  margin-bottom: 2.5rem;
 }
-.links .btn:hover {
+.resume-download:hover {
   background: var(--accent);
-  color: #fff;
+  color: var(--bg);
   text-decoration: none;
 }
 
-/* --- Sections ------------------------------------------------------------- */
-.resume-section { margin: 2.5rem 0; }
+/* --- Résumé sections (moved to Work) ------------------------------------- */
+.resume-section { margin: 3rem 0; }
 
 .resume-section > h2 {
-  font-size: .85rem;
+  font-size: .82rem;
   text-transform: uppercase;
-  letter-spacing: .12em;
+  letter-spacing: .14em;
   color: var(--muted);
+  font-weight: 600;
   border-bottom: 1px solid var(--line);
-  padding-bottom: .4rem;
+  padding-bottom: .45rem;
   margin: 0 0 1.75rem;
 }
 
-.resume-list {
-  display: grid;
-  gap: 2rem;
-}
+.resume-list { display: grid; gap: 2rem; }
 
 .entry {
   display: grid;
@@ -117,88 +244,72 @@ a:hover { text-decoration: underline; }
   padding-bottom: 1.7rem;
   border-bottom: 1px solid var(--line);
 }
-.entry:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
+.entry:last-child { border-bottom: none; padding-bottom: 0; }
 
 .entry-date {
-  font-size: .87rem;
+  font-size: .82rem;
   color: var(--muted);
   text-transform: uppercase;
-  letter-spacing: .12em;
+  letter-spacing: .1em;
   line-height: 1.5;
 }
 
 .entry-company {
   font-size: 1.05rem;
   margin: 0 0 .15rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -0.01em;
 }
-
 .entry-role {
   font-size: 1rem;
   margin: 0 0 .35rem;
   color: var(--muted);
-  font-weight: 600;
+  font-weight: 500;
 }
+.entry-location { margin: 0; color: var(--muted); font-size: .95rem; }
+.entry-sub { color: var(--muted); margin: .4rem 0 0; font-size: .95rem; }
 
-.entry-location {
-  margin: 0;
-  color: var(--muted);
-  font-size: .95rem;
-}
-
-.entry-sub {
-  color: var(--muted);
-  margin: .4rem 0 0;
-  font-size: .95rem;
-}
-
-.highlights {
-  margin: .9rem 0 0;
-  padding-left: 1.1rem;
-}
-.highlights li {
-  margin-bottom: .55rem;
-}
+.highlights { margin: .9rem 0 0; padding-left: 1.1rem; }
+.highlights li { margin-bottom: .55rem; }
 
 .skills {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-.skill-group {
-  display: block;
-  padding: .5rem 0;
+.skill-group { padding: .5rem 0; border-bottom: 1px solid var(--line); }
+.skill-group:last-child { border-bottom: none; }
+.skill-group dt { font-weight: 600; font-size: .95rem; margin-bottom: .35rem; }
+.skill-group dd { margin: 0; color: var(--muted); line-height: 1.5; }
+
+/* --- Contact page -------------------------------------------------------- */
+.contact-lead { display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2.5rem; }
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+  max-width: 32rem;
+}
+.contact-list li {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  gap: 1rem;
+  align-items: baseline;
+  padding-bottom: 1rem;
   border-bottom: 1px solid var(--line);
 }
-.skill-group:last-child { border-bottom: none; }
-.skill-group dt {
-  font-weight: 600;
-  font-size: .95rem;
-  margin-bottom: .35rem;
-}
-.skill-group dd {
-  margin: 0;
+.contact-list li:last-child { border-bottom: none; }
+.contact-list .k {
   color: var(--muted);
-  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: .78rem;
+  font-weight: 600;
 }
 
-/* --- Responsive resume layout ------------------------------------------- */
-@media (max-width: 680px) {
-  .page { padding-top: 2.5rem; }
-  .entry { grid-template-columns: 1fr; }
-  .entry-date { margin-bottom: .65rem; }
-}
-
-@media (max-width: 480px) {
-  .name { font-size: 2rem; }
-  .skill-group { padding: .35rem 0; }
-}
-
-/* --- Footer --------------------------------------------------------------- */
+/* --- Footer -------------------------------------------------------------- */
 .site-footer {
   max-width: var(--max-width);
   margin: 2rem auto 0;
@@ -209,18 +320,25 @@ a:hover { text-decoration: underline; }
 }
 .site-footer p { margin: 0; }
 
-/* --- Small screens -------------------------------------------------------- */
-@media (max-width: 480px) {
-  .page { padding-top: 2.5rem; }
-  .name { font-size: 2rem; }
-  .skill-group { flex-direction: column; gap: .1rem; }
-  .skill-group dt { flex-basis: auto; }
+/* --- Responsive ---------------------------------------------------------- */
+@media (max-width: 640px) {
+  .page { padding-top: 3rem; }
+  .home-intro { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .contact-lead { flex-direction: column; align-items: flex-start; }
+  .entry { grid-template-columns: 1fr; }
+  .entry-date { margin-bottom: .5rem; }
+  .contact-list li { grid-template-columns: 1fr; gap: .2rem; }
 }
 
-/* --- Print (so the live page itself prints as a tidy resume) -------------- */
+@media (max-width: 480px) {
+  body { font-size: 17px; }
+  .portrait { width: 132px; height: 132px; }
+}
+
+/* --- Print (Work page prints as a tidy resume) --------------------------- */
 @media print {
-  body { font-size: 12px; }
+  .site-header, .site-footer, .resume-download { display: none; }
+  body { font-size: 12px; background: #fff; color: #000; }
   .page { padding: 0; max-width: none; }
-  .links .btn, .site-footer { display: none; }
-  a { color: var(--ink); }
+  a { color: #000; }
 }
