@@ -75,12 +75,16 @@ nav: work
 
 {%- if r.skills and r.skills.size > 0 %}
 <section class="resume-section">
-  <h2>Skills</h2>
+  <h2>Skills &amp; Expertise</h2>
   <dl class="skills">
     {%- for group in r.skills %}
     <div class="skill-group">
       <dt>{{ group.category }}</dt>
-      <dd>{{ group.items | join: " · " }}</dd>
+      <dd>
+        <ul class="skill-items">
+          {%- for item in group.items %}<li>{{ item }}</li>{% endfor -%}
+        </ul>
+      </dd>
     </div>
     {%- endfor %}
   </dl>

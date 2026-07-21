@@ -55,6 +55,12 @@ skills:
   - category: Domain
     items:
       - Government & Civic Technology
+  - category: Trust, Safety & Governance
+    items:
+      - Data Privacy & Protection
+      - Online Safety Compliance
+      - Product Trust & Safety
+      - Scaled Platform Integrity & Governance
 
 # -----------------------------------------------------------------------------
 experience:
