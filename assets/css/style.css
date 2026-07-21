@@ -189,6 +189,8 @@ a:hover { text-decoration: underline; text-underline-offset: 2px; }
   margin: 0 0 2.5rem;
 }
 .intro strong { font-weight: 600; }
+/* Tighten spacing between consecutive intro paragraphs (About page). */
+.intro:has(+ .intro) { margin-bottom: 1.25rem; }
 
 .coming-soon {
   color: var(--muted);
