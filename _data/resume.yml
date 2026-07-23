@@ -64,7 +64,7 @@ skills:
 
 # -----------------------------------------------------------------------------
 experience:
-  - role: Consulting Product Manager (Contractor)
+  - role: Product Manager
     company: LakeRaven, LLC
     location: Remote
     client: New Mexico Bureau of Geology & Mineral Resources, statewide Water Data Initiative
@@ -78,7 +78,7 @@ experience:
       - Planned and conducted 5 structured user research sessions with field staff, researchers, and data managers, synthesizing findings into design recommendations, requirements, and roadmap items that directly shaped V1.1 scope and a multi-horizon capability roadmap.
       - Established a shared AI context repository for the development team, capturing institutional knowledge, product strategy, and domain expertise into structured files that AI coding tools reference automatically. Extended this approach to documentation, diagnostics, and reporting, standardizing async-first knowledge systems for continuity through staffing transitions.
 
-  - role: Consulting Product Manager
+  - role: Product Manager
     company: 18F · General Services Administration
     location: Remote
     start: Sep 2024
@@ -89,7 +89,7 @@ experience:
       - Defined modernization goals for the DoD's fax-based absentee voting service, translating regulatory and technical constraints into actionable milestones.
       - Streamlined 18F's onboarding program by evaluating tools and processes, reducing onboarding time and improving new-hire readiness.
 
-  - role: Volunteer Product Manager
+  - role: Product Manager
     company: Rebel Alliance
     location: Remote
     start: Jul 2025
