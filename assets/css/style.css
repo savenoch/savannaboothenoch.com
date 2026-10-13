@@ -306,18 +306,12 @@ a:hover { text-decoration: underline; text-underline-offset: 2px; }
 .highlights { margin: .9rem 0 0; padding-left: 1.1rem; }
 .highlights li { margin-bottom: .55rem; }
 
-.skills {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.skills-line {
+  color: var(--muted);
+  font-size: .95rem;
+  line-height: 1.6;
+  margin: 0 0 2.5rem;
 }
-.skill-group { padding: .5rem 0; border-bottom: 1px solid var(--line); }
-.skill-group:last-child { border-bottom: none; }
-.skill-group dt { font-weight: 600; font-size: .95rem; margin-bottom: .35rem; }
-.skill-group dd { margin: 0; color: var(--muted); line-height: 1.5; }
-.skill-items { list-style: disc; margin: 0; padding-left: 1.15rem; }
-.skill-items li { margin-bottom: .25rem; }
-.skill-items li:last-child { margin-bottom: 0; }
 
 /* --- Contact page -------------------------------------------------------- */
 .contact-lead { display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2.5rem; }

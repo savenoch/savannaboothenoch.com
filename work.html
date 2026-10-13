@@ -29,6 +29,10 @@ nav: work
   {%- endif -%}
 </div>
 
+{%- if r.skills and r.skills.size > 0 %}
+<p class="skills-line">{{ r.skills | join: " · " }}</p>
+{%- endif -%}
+
 {%- if r.experience and r.experience.size > 0 %}
 <section class="resume-section experience-section">
   <h2>Experience</h2>
@@ -45,6 +49,7 @@ nav: work
         {%- if job.location %}<p class="entry-location">{{ job.location }}</p>{% endif -%}
       </div>
       {%- if job.client %}<p class="entry-sub">Client: {{ job.client }}</p>{% endif -%}
+      {%- if job.summary %}<p class="entry-sub">{{ job.summary }}</p>{% endif -%}
       {%- if job.highlights %}
       <ul class="highlights">
         {%- for h in job.highlights %}<li>{{ h }}</li>{% endfor -%}
@@ -70,24 +75,6 @@ nav: work
     {%- if ed.notes %}<p class="entry-note">{{ ed.notes }}</p>{% endif -%}
   </article>
   {%- endfor %}
-</section>
-{%- endif -%}
-
-{%- if r.skills and r.skills.size > 0 %}
-<section class="resume-section">
-  <h2>Skills &amp; Expertise</h2>
-  <dl class="skills">
-    {%- for group in r.skills %}
-    <div class="skill-group">
-      <dt>{{ group.category }}</dt>
-      <dd>
-        <ul class="skill-items">
-          {%- for item in group.items %}<li>{{ item }}</li>{% endfor -%}
-        </ul>
-      </dd>
-    </div>
-    {%- endfor %}
-  </dl>
 </section>
 {%- endif -%}
 
