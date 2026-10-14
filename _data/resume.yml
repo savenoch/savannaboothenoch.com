@@ -50,28 +50,28 @@ experience:
   - role: Product Manager
     company: 59 Projects
     location: Remote
+    summary: "Many Paths: care coordination for people experiencing street homelessness"
     start: Jul 2026
     end: Present
     highlights:
-      - Partner with the founder and product designer on Many Paths, a shared by-name list and care coordination platform for providers serving people experiencing street homelessness in Santa Fe, refining the prototype, surfacing gaps, co-leading user interviews, and turning feedback into a prioritized backlog.
+      - Partner with the founder and product designer on Many Paths, refining the prototype, surfacing gaps, co-leading user interviews with service providers, and turning feedback into a prioritized backlog.
       - Identified the need for data security and privacy compliance (including HIPAA) for sensitive personal and health data, brought in expert advisors, and set the pilot launch to follow those requirements.
-      - Own the plan to a viable pilot launch, including the pilot definition, success metrics, and clear priorities, sequencing, and asks for each stakeholder.
+      - Own the plan to a viable pilot launch, including the pilot definition, success metrics, and clear priorities and sequencing for each stakeholder.
       - Helped shape the firm's new discovery offering for local and state government, and edited its proposal to the City of Santa Fe for a five-year homelessness strategy.
 
   - role: Product Manager
     company: LakeRaven, LLC
     location: Remote
-    client: New Mexico Bureau of Geology & Mineral Resources, statewide Water Data Initiative
+    summary: "New Mexico Water Data Initiative: shipping V1 on the committed date"
     start: Dec 2025
     end: Jun 2026
     highlights:
       - Shipped V1 of the Bureau's first unified data management platform on the committed date (April 2026) as its first product manager, owning product strategy, V1 scope, and the roadmap.
       - "Defined V1 through discovery: ran user research with field staff and researchers, facilitated a two-day roadmapping workshop with 15+ leaders, engineers, and field staff, and turned cross-bureau input into a V1 product definition and prioritization framework."
-      - Sequenced foundations first, prioritizing data governance and access controls ahead of higher-risk capabilities like data entry to avoid costly rework.
-      - Held the launch date through a mid-project capacity shock (two developers on leave in the same week) by re-scoping the data migration to the highest-value, lowest-effort data and making the tradeoff explicit to users and leadership.
+      - Held the launch date through a mid-project capacity shock (two developers on leave in the same week) by re-scoping the data migration to the highest-value, lowest-effort data.
       - Restored leadership confidence with a predictable delivery and communication cadence, which led to new funding for a statewide geothermal initiative, a continuous sensor data pipeline, and cross-Bureau partnerships.
-      - Wrote the statement of work for funded follow-on work and managed staffing and capacity through four personnel transitions as the delivery escalation point.
-      - Stood up agile delivery from zero (sprint planning, retrospectives, PR review, bug triage, a team working agreement) plus an AI context repository; the practices held after handoff to a staff product owner.
+      - Co-wrote the statement of work for funded follow-on work, and advised on staffing and capacity through four personnel transitions.
+      - Introduced agile delivery and modern product practices (sprint planning, retrospectives, PR review, bug triage, a team working agreement) and built an AI context repository; the practices held through the handoff to, and onboarding of, a newly hired staff product manager.
 
   - role: Product Manager
     company: Rebel Alliance
@@ -80,30 +80,31 @@ experience:
     start: Jul 2025
     end: Jan 2026
     highlights:
-      - Led a distributed volunteer team across time zones from requirements to an approved website concept, facilitating stakeholder decisions and a clean handoff to design and development.
+      - Led a distributed volunteer team across time zones from requirements to an approved website design, facilitating stakeholder decisions and the handoff to development.
 
   - role: Product Manager
-    company: 18F · General Services Administration
+    company: "18F | General Services Administration"
     location: Remote
+    summary: Federal Voting Assistance Program discovery
     start: Sep 2024
     end: Mar 2025
     highlights:
-      - Led discovery for the DoD Federal Voting Assistance Program, where state fax requirements left a five-person team hand-processing thousands of emailed ballots on deadline.
-      - Mapped the end-to-end voter journey, state-by-state rules, and technical constraints with a service designer and an engineer.
-      - Owned the recommendations and a Now / Next / Later roadmap, aligning a DoD program, state election officials, and partner agencies outside the team's reporting line.
+      - Led discovery to modernize the DoD Federal Voting Assistance Program's ballot services, where state fax requirements left a five-person team hand-processing thousands of emailed ballots on deadline.
+      - Mapped the end-to-end voter journey, state-by-state rules, and technical constraints with a service designer and an engineer, and assessed off-the-shelf technology options with the team's acquisition specialist and agency staff.
+      - Delivered recommendations and a Now / Next / Later roadmap in under three weeks after the engagement was cut short by two months, aligning DoD, state election officials, and partner agencies.
 
   - role: Product Integrity Program Manager
     company: Meta Platforms
     location: Remote
-    summary: "Instagram Product Trust & Safety: owned safety strategy for a portfolio of products and policy areas, with no direct engineering or data science resources."
+    summary: Instagram Product Trust & Safety
     start: Mar 2021
     end: May 2023
     highlights:
-      - Owned safety strategy for five high-complexity Instagram product areas against a role expectation of one, defining how products were designed, reviewed, and launched to prevent harmful and policy-violating behavior.
-      - Co-led a platform-wide safety audit of 50+ live Instagram products, including orphaned products with no owning team, and persuaded teams with separate roadmaps to implement required mitigations, including user reporting, automated detection and enforcement, measurement and guardrails, and content and teen safety controls.
-      - Drove adoption of safety mitigations across dozens of product teams and hundreds of features, integrating standard detection, reporting, and measurement tooling into launches while protecting product KPIs and business OKRs.
-      - Secured leadership buy-in for a new product safety review model, built with a cross-functional working group (operations, legal, product, engineering, data, policy); the model was adopted across Meta's Family of Apps.
-      - Shipped the first in-product safety controls for licensed music across Instagram and Facebook (in-player reporting, controls to hide unwanted music, and filtering of violating content from search and recommendations), after building the business case that secured resourcing and co-writing the first content policy for music violations.
+      - Owned safety strategy for five high-complexity Instagram product areas against a role expectation of one.
+      - Co-led a platform-wide safety audit of 50+ live Instagram products, including orphaned products with no owning team, and persuaded teams with separate roadmaps to implement necessary safety systems and mitigations, including user reporting, automated detection and enforcement, measurement and guardrails, and content and teen safety controls.
+      - Secured leadership buy-in for a new product safety review approach, built with a cross-functional working group; the model was later adapted for scale and adopted across Meta's Family of Apps.
+      - Shipped the first in-product safety controls for licensed music across Instagram and Facebook (in-player reporting, controls to hide unwanted music, and filtering of violating content from search and recommendations).
+      - "Helped design the first automated detection model for violating music: co-wrote the content policy and reviewer guidance, secured review capacity to label and test, and secured engineering to launch and tune it on review decisions, blocklists, and user signals."
 
   - role: Product Program Manager
     company: Meta Platforms
@@ -112,8 +113,8 @@ experience:
     start: Aug 2018
     end: Mar 2021
     highlights:
-      - Built Instagram's first cross-functional pre-launch review program for digital rights abuse, standardizing how teams assessed legal, privacy, operational, and compliance risk.
-      - Translated technical constraints for legal and operations teams, and legal requirements for engineering, making tradeoffs visible on both sides.
+      - Established Instagram's first program for assessing digital rights risk before launch (IP, counterfeits, privacy, music rights, and legal compliance), standardizing how those risks were assessed and addressed across the platform.
+      - Built a risk heat map from product usage, reporting, and enforcement data to prioritize launch reviews, then mapped product features to the harms they enable with partner risk teams, producing guidance teams used to plan mitigations early.
       - Mentored and trained a team of 7 to own Instagram-wide product safety reviews.
 
   - role: Technical Program Manager
@@ -123,9 +124,10 @@ experience:
     start: Oct 2016
     end: Aug 2018
     highlights:
-      - Owned GDPR compliance for the Relevance engineering organization, translating legal requirements into per-team technical requirements and feasibility timelines.
-      - Designed the Privacy by Design risk assessment process, reconciling legal, product, and engineering priorities; delivered by the GDPR deadline.
-      - Coached 6 engineering and 5 product teams through agile adoption, and introduced roadmaps, goals, and an engagement model for a bottleneck organization other teams depended on.
+      - "Brought in to unblock the product org's biggest bottleneck: embedded with the Relevance teams, ran discovery across the org, and partnered with a newly hired engineering director to roll out a new charter and ways of working, from PR reviews to bug prioritization."
+      - Coached 6 engineering and 5 product teams through agile adoption, set a consistent release cadence, and built sprint and release dashboards so dependent teams could plan around Relevance.
+      - Launched a collaborative planning process with the org's PMs that made prioritization and tradeoffs transparent to dependent teams and gave Relevance control of its own roadmap, reducing reactive work.
+      - "Owned GDPR compliance for the org: designed the Privacy by Design risk assessment process and translated legal requirements into per-team technical requirements, delivering by the deadline."
 
   - role: Operations & Systems Program Manager
     company: Delivering Happiness
@@ -133,8 +135,8 @@ experience:
     start: Jun 2014
     end: Jul 2016
     highlights:
-      - Cut the sales cycle 57% (64 to 27 days) by redesigning Salesforce workflows and implementing a lead management system, in partnership with the COO.
-      - Launched the company's first automated B2B marketing system.
+      - Cut the sales cycle 57% (64 to 27 days) by cleaning and restructuring sales data, redesigning Salesforce, and implementing a lead management system, in partnership with the COO.
+      - Owned procurement and rollout of the company's first marketing automation platform, which clarified the target customer and improved lead quality.
 
   - role: Program Development Coordinator
     company: ProInspire
