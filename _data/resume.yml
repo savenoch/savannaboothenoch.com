@@ -71,7 +71,7 @@ experience:
       - Held the launch date through a mid-project capacity shock (two developers on leave in the same week) by re-scoping the data migration to the highest-value, lowest-effort data.
       - Restored leadership confidence with a predictable delivery and communication cadence, which led to new funding for a statewide geothermal initiative, a continuous sensor data pipeline, and cross-Bureau partnerships.
       - Co-wrote the statement of work for funded follow-on work, and advised on staffing and capacity through four personnel transitions.
-      - Introduced agile delivery and modern product practices (sprint planning, retrospectives, PR review, bug triage, a team working agreement) and built an AI context repository; the practices held through the handoff to, and onboarding of, a newly hired staff product manager.
+      - Introduced agile delivery and modern product practices (sprint planning, retrospectives, PR review, bug triage, a team working agreement) and built an AI context repository with guardrails and workflows for the team's AI coding tools; the practices held through the handoff to, and onboarding of, a newly hired staff product manager.
 
   - role: Product Manager
     company: Rebel Alliance
@@ -125,7 +125,7 @@ experience:
     end: Aug 2018
     highlights:
       - "Brought in to unblock the product org's biggest bottleneck: embedded with the Relevance teams, ran discovery across the org, and partnered with a newly hired engineering director to roll out a new charter and ways of working, from PR reviews to bug prioritization."
-      - Coached 6 engineering and 5 product teams through agile adoption, set a consistent release cadence, and built sprint and release dashboards so dependent teams could plan around Relevance.
+      - Coached the org's 6 engineering teams and their PMs through agile adoption, set a consistent release cadence, and built sprint and release dashboards so dependent teams could plan around Relevance.
       - Launched a collaborative planning process with the org's PMs that made prioritization and tradeoffs transparent to dependent teams and gave Relevance control of its own roadmap, reducing reactive work.
       - "Owned GDPR compliance for the org: designed the Privacy by Design risk assessment process and translated legal requirements into per-team technical requirements, delivering by the deadline."
 
